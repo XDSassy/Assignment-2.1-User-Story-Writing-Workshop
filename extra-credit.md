@@ -1,0 +1,1 @@
+The total story points add up to 57. Assuming a team velocity is 15 points per sprint it would take approximaately 4 sprints. Where we start with core booking features first then move to more complex admin and reporting features in later sprints to manage risk and unsure a stable delivery

@@ -1,131 +1,131 @@
 ## Story # 1 : Basic room booking(Employee)
 **As a** Employee 
-**I want to** [action/capabillity]
-**So that** [bisiness value]
+**I want to** book an available conference room for  specific date and time
+**So that** i can reserve space for my meeting
 
 ### Acceptance Criteria:
-- [] Given [contex], When [action], Then [expected outcome]
-- [] Given [contex], When [action], Then [expected outcome]
-- [] Given [contex], When [action], Then [expected outcome]
+- [] Given I am logged in, When I select a date and time, Then I see the list of available rooms.
+- [] Given a room is available, When I confirm the booking, Then the booking is successfully saved.
+- [] Given the booking is saved, When i view the bookings, Then the new booking is displayed.
 
 ### Story Points:
-[Choose from: 1,2,3,5,8,13]
+5
 
 ### Priority:
-[High/Medium/Low]
+High
 
 ### Dependencies:
-- List any dependent stories, or write "None"
+- None
 
 ### Technical Notes:
-- Any assumptions, constraints, or technical considerations
+- Room availability must be validated in reaal time.
 
 ### Design Notes:
-- UI/UX considerations or adge cases
+- Must have clear indicators for calander based date and time selection.
 
 
 ## Story # 2 : Recurring meetings setup(Employee)
 **As a** Employee
-**I want to** [action/capability]
-**So that** [business value]
+**I want to** I want to book a room for recurring meetings.
+**So that** I do not have to make a booking each time.
 
 ### Acceptance Criteria:
-- [] Given [contex], When [action], Then [expected outcome]
-- [] Given [contex], When [action], Then [expected outcome]
-- [] Given [contex], When [action], Then [expected outcome]
+- [] Given I select a recurring option, When i submit the booking, Then multiple bookings are created.
+- [] Given one or more time slots are unavailable, When I submit the request, Then I aam notified of any conflicts.
+- [] Given my recurring booking is confirmed, When I view my bookings, Then all recurring bookings are shown.
 
 ### Story Points:
-[Choose from: 1,2,3,5,8,13]
+8
 
 ### Priority:
-[High/Medium/Low]
+Medium
 
 ### Dependencies:
-- List any dependent stories, or write "None"
+- Story #1
 
 ### Technical Notes:
-- Any assumptions, constraints or technical considerations
+- Recurring rules must support weekly paaterns at minimum.
 
 ### Design Notes:
-- UI/UX considerations or edge cases
+- Show a preview of all recurring dates before confirming.
 
 
 ## Story # 3 : Room capacity filtering(Employee)
 **As a** Employee
-**I want to** [action/capability]
-**So that** [business value]
+**I want to** I waant to fliter rooms by seating capacity.
+**So that** I can choose a room suitable for my meeting size.
 
 ### Acceptance Criteria:
-- [] Given [contex], When [action], Then [expected outcome]
-- [] Given [contex], When [action], Then [expected outcome]
-- [] Given [contex], When [action], Then [expected outcome]
+- [] Given capacity filters are available, When I select a minimum capacity, Then only matching rooms are shown.
+- [] Given I change the capacity filter, When applied, Then only rooms matching the capacity are shown.
+- [] Given no rooms meet the criteria, When filtering, Then an informative message is displayed.
 
 ### Story Points:
-[Choose from: 1,2,3,5,8,13]
+3
 
 ### Priority:
-[High/Medium/Low]
+Medium
 
 ### Dependencies:
-- List any dependent stories, or write "None"
+- Story #1
 
 ### Technical Notes:
-- Any assumptions, constraints, or technical considerations
+- Room capacity must be stored as searchable metadata.
 
 ### Design Notes:
-- UI/UX considerations or edge cases
+- Use a dropdown or slider for capacity selection.
 
 
 ## Story # 4 : Booking cancellation(Employee)
 **As a** Employee
-**I want to** [action/capability]
-**So that** [business value]
+**I want to** cancel my room booking
+**So that** the room becomes available to others
 
 ### Acceptance criteria:
-- [] Given [context], When [action], Then [expected outcome]
-- [] Given [context], When [action], Then [expected outcome]
-- [] Given [context], When [action], Then [expected outcome]
+- [] Given I have a current booking, When cancel the booking, Then the booking is removed.
+- [] Given the booking is cancelled, When others search for rooms, Then the room is available.
+- [] Given i cancel a booking, When I view my bookings list, Then the cancelled booking is no longer available.
 
 ### Story Points:
-[Choose from: 1,2,3,5,8,13]
+2
 
 ### Priority:
-[High/Medium/Low]
+High
 
 ### Dependencies:
-- List any dependent stories, or write "None"
+- Story #1
 
 ### Technical Notes:
-- Any assumptions, constraints, or technical considerations
+- Only the employee who made the booking can cancel it.
 
 ### Design Notes:
-- UI/UX considerations or edge cases
+- Display a confirmation prompt before cancellation.
 
 
 ## Story # 5 : Room equipment requirements(Employee)
 **As  a** Employee
-**I want to** [action/capability]
-**So that** [business value]
+**I want to** book rooms with specific equipment
+**So that** my meeting requirements are met.
 
 ### Acceptance Criteria:
-- [] Given [contex], When [action], Then [expected outcome]
-- [] Given [contex], When [action], Then [expected outcome]
-- [] Given [contex], When [action], Then [expected outcome]
+- [] Given equipment filters are available, When i select required equipment, Then matching rooms are shown.
+- [] Given multiple equipment requirements, When applied, Then only rooms meeting all requirements are shown.
+- [] Given no rooms match the equipment needs, When searching, Then the system displays a message.
 
 ### Story Points:
-[Choose from: 1,2,3,5,8,13]
+3
 
 ### Priority:
-[High/Medium/Low]
+Medium
 
 ### Dependencies:
-- List any dependent stories, or write "None"
+- Story #1
 
 ### Technical Notes:
-- Any assumptions, constraints, or technical considerations
+- Each room must have an equipment list.
 
 ### Design Notes:
-- UI/UX considerations or edge cases
+- Use checkboxes to select equipment needs.
 
 
 ## Story # 6 : Room maintenance scheduling(Facilities Manager)

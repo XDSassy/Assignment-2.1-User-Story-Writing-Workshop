@@ -182,77 +182,77 @@ Low
 
 ## Story # 8 : Admin dashboard viewing(Admin)
 **As a** Admin
-**I want to** [action/capability]
-**So that** [business]
+**I want to** view an administrative dashboard
+**So that** i can monitor system usage and bookings.
 
 ### Acceptance Criteria:
-- [] Given [context], When [action], Then [expected outcome]
-- [] Given [context], When [action], Then [expected outcome]
-- [] Given [context], When [action], Then [expected outcome]
+- [] Given I am logged in as an admin, When I access the system, Then the dashboard is displayed.
+- [] Given the dashboard loads, When viewed, Then key statistics are visible.
+- [] Given a system error occurs, When loading the dashboard, Then an error message is shown.
 
 ### Story Points:
-[Choose from: 1,2,3,5,8,13]
+5
 
 ### Priority:
-[High/Medium/Low]
+High
 
 ### Dependencies:
-- List any dependent stories, or write "None"
+- Story #1
 
 ### Technical Notes:
-- Any assumptions,constraints, or technical considerations
+- Dashboard data is combined from booking records
 
 ### Design Notes:
-- UI/UX considerations or edge cases
+- Use charts and summary tiles for clarity
 
 
 ## Story # 9 : Booking conflict resolution(Admin)
 **As a** Admin
-**I want to** [action/capability]
-**So that** [business value]
+**I want to** resolve booking conflicts
+**So that** scheduling issues are handled efficiently.
 
 ### Acceptance Criteria: 
-- [] Given [context], When [action], Then [expected outcome]
-- [] Given [context], When [action], Then [expected outcome]
-- [] Given [context], When [action], Then [expected outcome]
+- [] Given a booking conflict exists, When i view conflicts, Then all conflicting bookings are listed.
+- [] Given i resolve a conflict, When saved, Then only the approved booking remains.
+- [] Given a conflict is resolved, When completed, Then affected users are notified.
 
 ### Story Points:
-[Choose from: 1,2,3,5,8,13]
+8
 
 ### Priority:
-[High/Medium/Low]
+High
 
 ### Dependencies:
-- List any dependent stories, or write "None"
+- Story #1
 
 ### Technical Notes:
-- Any assumptions,constraints, or technical considerations
+- The system must detect overlapping bookings automatically.
 
 ### Design Notes:
-- UI/UX considerations or edge cases
+- Highlight conflicts using visual indicators.
 
 
 ## Story # 10 : Usage reports generation(Admin)
 **As a** Admin
-**I want to** [action/capability]
-**So that** [business value]
+**I want to** generate room usage reports
+**So that** i can analyze utilizaation trends.
 
 ### Acceptance Criteria:
-- [] Given [context], When [action], Then [expected outcome]
-- [] Given [context], When [action], Then [expected outcome]
-- [] Given [context], When [action], Then [expected outcome]
+- [] Given a date range is selected, When i generate a report, Then accurate usage data is shown.
+- [] Given a report is generated, When I export it, Then a file is downloaded.
+- [] Given large datasets, When generating reports, Then system performance remains acceptable.
 
 ### Dtory Points:
-[Choose from: 1,2,3,5,8,13]
+13
 
 ### Priority:
-[High/Medium/Low]
+Medium
 
 ### Dependencies:
-- List any dependent stories, or write "None"
+- Story #8
 
 ### Technical Notes:
-- Any assumptions, constraints, or technical considerations
+- Reports may require optimized queries and caching.
 
 ### Design Notes:
-- UI/UX considertions or edge cases
+- Provide filters and export options in the UI.

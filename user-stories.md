@@ -130,54 +130,54 @@ Medium
 
 ## Story # 6 : Room maintenance scheduling(Facilities Manager)
 **As a** Facilities Manager
-**I want to** [action/capability]
-**So that** [business value]
+**I want to** block rooms for maintenance
+**So that** they are unavailable during maintenance
 
 ### Acceptance Criteria:
-- [] Given [contex], When [action], Then [expected outcome]
-- [] Given [contex], When [action], Then [expected outcome]
-- [] Given [contex], When [action], Then [expected outcome]
+- [] Given I schedule maintenance, When saved, Then the room is blocked for booking.
+- [] Given a room is under maintenance, When employees search, Then room will show as unavailable.
+- [] Given maintenance ends, When the scheduled time passes, Then the room becomes available again.
 
 ### Story Points:
-[Choose from: 1,2,3,5,8,13]
+5
 
 ### Priority:
-[High/Medium/Low]
+Medium
 
 ### Dependencies:
-- List any dependent stories, or write "None"
+- Story #1
 
 ### Technical Notes:
-- Any assumptions, constraints, or technical considerations
+- Maintenance bookings overide regular bookings.
 
 ### Design Notes:
-- UI/UX considerations or edge cases
+- Provide a maintenance specific calendar view.
 
 
 ## Story # 7 : Visitor booking assistance(Receptionist)
 **As A** Receptionist
-**I want to** [action/capability]
-**So that** [business value]
+**I want to** book rooms on behalf of visitors
+**So that** external meetings can be supported
 
 ### Acceptance Criteria:
-- [] Given [context], When [action], Then [expected outcome]
-- [] Given [context], When [action], Then [expected outcome]
-- [] Given [context], When [action], Then [expected outcome]
+- [] Given visitor details are entered, When the booking are submited, Then it is saved successfully.
+- [] Given the booking is created, When viewed, Then the visitors name is displayed.
+- [] Given a receptionist creates the booking, When saved, Then the aaction is logged for audit purposes.
 
 ### Story Points:
-[Choose from: 1,2,3,5,8,13]
+5
 
 ### Priority:
-[High/Medium/Low]
+Low
 
 ### Dependencies:
-- List any dependent stories, or write "None"
+- Story #1
 
 ### Technical Notes:
-- Any assumptions, constraints, or technical considerations
+- Visitor booking must show differently from employee bookings.
 
 ### Design Note:
-- UI/UX considerations or edge cases
+- They must include a visitor information form.
 
 
 ## Story # 8 : Admin dashboard viewing(Admin)
